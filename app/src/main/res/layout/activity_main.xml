@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cian">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/blue"
+        android:textStyle="italic"
+        android:textSize="50sp" />
+
+    <GridLayout
+        android:id="@+id/area_juego"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="50dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda1" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda2" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda3"
+            />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda4" />
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda5" />
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda6" />
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda7" />
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda8" />
+        <ImageButton
+            android:id="@+id/button9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@color/beige"
+            android:contentDescription="@string/cerda9"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"
+
+        android:layout_marginTop="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/hinder"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/eazy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:text="@string/eazy" />
+        <RadioButton
+            android:id="@+id/difficult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:checked="false"
+            android:text="@string/difficult" />
+
+    </RadioGroup >
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/beige"
+        android:text="@string/start"
+        android:textColor="@color/black"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/humanimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:contentDescription="@string/turnHumen"/>
+
+        <TextView
+            android:id="@+id/humantxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/turn"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_marginTop="100dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/botimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/android"
+            android:contentDescription="@string/turnBot"/>
+
+        <TextView
+            android:id="@+id/bottext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/turn"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_marginTop="100dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

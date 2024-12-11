@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="title">3 en Raya</string>
+    <string name="cerda1">1º cerda</string>
+    <string name="cerda2">2º cerda</string>
+    <string name="cerda3">3º cerda</string>
+    <string name="cerda4">4º cerda</string>
+    <string name="cerda5">5º cerda</string>
+    <string name="cerda6">6º cerda</string>
+    <string name="cerda7">7º cerda</string>
+    <string name="cerda8">8º cerda</string>
+    <string name="cerda9">9º cerda</string>
+    <string name="eazy">Tranquilitos,¿eh?</string>
+    <string name="difficult">Me gustan los retos</string>
+    <string name="start">start</string>
+    <string name="turn">Turno</string>
+    <string name="turnHumen">turno de persona</string>
+    <string name="turnBot">turno de robot</string>
+</resources>
